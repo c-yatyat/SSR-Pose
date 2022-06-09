@@ -1,6 +1,5 @@
 # SSR-Pose
 
-## 介绍
 Scale-Sensitive Representation for Multi-Person Pose Estimation
 尺度感知的多人姿态估计SSR-Pose
 

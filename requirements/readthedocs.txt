@@ -1,0 +1,9 @@
+mmcv-full
+munkres
+poseval@git+https://gitee.com/chen1ming/poseval.git
+regex
+scipy
+titlecase
+torch==1.7.0
+torchvision==0.8.0
+xtcocotools>=1.8

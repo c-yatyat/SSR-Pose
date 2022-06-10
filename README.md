@@ -24,7 +24,7 @@ Scale-Sensitive Representation for Multi-Person Pose Estimation
 
 ## 使用说明
 
-1.  建议参照[mmpose](https://github.com/open-mmlab/mmpose)官网的中文教程，不嫌弃的话也可以看看我曾经写过的知乎专栏[人体姿态咕咕](https://www.zhihu.com/column/c_1329419002742157312)，了解一下代码库大概结构和使用方式等。
+1.  建议参照[mmpose](https://github.com/open-mmlab/mmpose)官网的中文教程，不嫌弃的话也可以看看我曾经写过的知乎专栏[人体姿态咕咕](https://www.zhihu.com/column/c_1329419002742157312)或者CSDN文章们[很多内容](https://blog.csdn.net/Patricia_daye?spm=1011.2415.3001.5343)，了解一下代码库大概结构和使用方式等。
 2.  关于方法的集成和修改集中在`./configs`里面，比如`./configs/body/2d_kpt_sview_rgb_img/associative_embedding/coco/`里面储存用coco数据集做bottom-up系列2d人体姿态估计的算法。
 3.  关于模块的修改集中在`./mmpose`内的所有小文件夹里，举个例子`./mmpose/models/backbones/dcn_adaptive.py`就是尝试加入adaptive方法的小模块。
 4.  如果想调用修改后的模块方法，需要事先注册，比如`./mmpose/models/backbones/__init__.py`里面替换或重新指定。

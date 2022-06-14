@@ -1,7 +1,6 @@
 log_level = 'INFO'
 # load_from = None
-# load_from = 'checkpoints/higher_hrnet32_coco_512x512_udp-8cc64794_20210222.pth'
-load_from = 'checkpoints/best_udp_dcn.pth'
+load_from = 'checkpoints/higher_hrnet32_coco_512x512_udp-8cc64794_20210222.pth'
 resume_from = None
 dist_params = dict(backend='nccl')
 workflow = [('train', 1)]
@@ -12,7 +11,7 @@ evaluation = dict(interval=1, metric='mAP', key_indicator='AP')
 
 optimizer = dict(
     type='Adam',
-    lr=0.000015,  # training: --autoscale-lr
+    lr=0.00015,  # training: --autoscale-lr
     # lr=0.0015,
 )
 optimizer_config = dict(grad_clip=None)
@@ -24,7 +23,7 @@ lr_config = dict(
     warmup_ratio=0.001,
     step=[200, 260])
 # total_epochs = 300
-total_epochs = 50
+total_epochs = 20
 log_config = dict(
     interval=50,
     hooks=[

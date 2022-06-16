@@ -6,6 +6,7 @@ Scale-Sensitive Representation for Multi-Person Pose Estimation
 在HigherHRNet的基础上，加入变形卷积的概念，增强模型尺度感知力。
 
 
+
 ## 安装教程
 
 1.  建议事先参考[mmpose](https://github.com/open-mmlab/mmpose)官网，了解代码库脉络，并安装好mmcv和mmpose。
